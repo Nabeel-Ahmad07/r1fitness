@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | R1 Fitness Gym Rawalpindi</title>
+<meta name="description" content="Get in touch with R1 Fitness Gym. Two branches in Satellite Town, Rawalpindi, open 24/7. Call, WhatsApp, or visit us to book your appointment today.">
+<meta name="keywords" content="contact R1 Fitness Gym, R1 Fitness Gym phone number, R1 Fitness Gym address, gym Satellite Town Rawalpindi contact">
+<meta property="og:title" content="Contact R1 Fitness Gym">
+<meta property="og:description" content="Reach out to R1 Fitness Gym's Main Saidpur Road or Commercial Market branch in Rawalpindi.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<style>
+  :root{
+    --bg-primary:#1E1C1C;
+    --bg-secondary:#252323;
+    --amber:#F1A128;
+    --red:#E52521;
+    --white:#FFFFFF;
+    --grad: linear-gradient(135deg,#E52521,#F1A128);
+    --grad-soft: linear-gradient(135deg, rgba(229,37,33,.15), rgba(241,161,40,.15));
+    --ease: cubic-bezier(.16,.84,.44,1);
+  }
+  *{scroll-behavior:smooth;}
+  body{background:var(--bg-primary); color:var(--white); font-family:'Inter',sans-serif; overflow-x:hidden;}
+  h1,h2,h3,h4,.display-font{font-family:'Bebas Neue',sans-serif; letter-spacing:1px; line-height:1.05;}
+  .text-grad{background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .eyebrow{font-weight:700; letter-spacing:3px; text-transform:uppercase; font-size:.75rem; color:var(--amber);}
+
+  .btn-amber{background:var(--grad); background-size:200% 200%; color:#1E1C1C; font-weight:700; border:none; border-radius:50px; padding:.9rem 2rem; letter-spacing:.5px; transition:transform .35s var(--ease), box-shadow .35s var(--ease), background-position .6s ease;}
+  .btn-amber:hover{transform:translateY(-4px) scale(1.02); box-shadow:0 15px 35px -8px rgba(241,161,40,.55); background-position:100% 50%; color:#1E1C1C;}
+  .btn-amber:disabled{opacity:.7; transform:none; cursor:default;}
+  .btn-outline-light-custom{border:1.5px solid rgba(255,255,255,.35); color:#fff; background:rgba(255,255,255,.03); backdrop-filter:blur(6px); border-radius:50px; padding:.9rem 2rem; font-weight:600; letter-spacing:.5px; transition:all .35s var(--ease);}
+  .btn-outline-light-custom:hover{background:#fff; color:#1E1C1C; border-color:#fff; transform:translateY(-4px);}
+  .ripple{position:relative; overflow:hidden;}
+  .ripple::after{content:""; position:absolute; top:50%; left:50%; width:5px; height:5px; background:rgba(255,255,255,.5); border-radius:100%; opacity:0; transform:translate(-50%,-50%);}
+  .ripple:active::after{animation:rip .6s ease-out;}
+  @keyframes rip{0%{opacity:1; width:5px; height:5px;} 100%{opacity:0; width:400px; height:400px;}}
+
+  /* NAVBAR */
+  .navbar{padding:1.25rem 0; transition:all .45s var(--ease); background:rgba(30,28,28,.85); backdrop-filter:blur(14px); border-bottom:1px solid rgba(241,161,40,.15);}
+  .navbar.scrolled{padding:.7rem 0; box-shadow:0 10px 30px -15px rgba(0,0,0,.6);}
+  .navbar-brand{font-family:'Bebas Neue',sans-serif; font-size:1.9rem; letter-spacing:2px; color:#fff !important;}
+  .navbar-brand span{color:var(--amber);}
+  .nav-link{color:rgba(255,255,255,.85) !important; font-weight:600; letter-spacing:.5px; margin:0 .6rem; position:relative; transition:color .3s ease;}
+  .nav-link::after{content:""; position:absolute; left:0; bottom:-4px; width:0; height:2px; background:var(--grad); transition:width .35s var(--ease);}
+  .nav-link:hover::after, .nav-link.active::after{width:100%;}
+  .nav-link:hover{color:#fff !important;}
+  .nav-book{background:var(--grad); color:#1E1C1C !important; padding:.55rem 1.4rem !important; border-radius:50px; font-weight:700 !important; margin-left:.5rem; transition:transform .3s var(--ease), box-shadow .3s var(--ease);}
+  .nav-book:hover{transform:translateY(-3px); box-shadow:0 10px 25px -8px rgba(241,161,40,.6); color:#1E1C1C !important;}
+  .nav-book::after{display:none;}
+  .navbar-toggler{border:none; padding:0;}
+  .navbar-toggler:focus{box-shadow:none;}
+  .hamburger{width:28px; height:20px; position:relative;}
+  .hamburger span{display:block; position:absolute; height:2px; width:100%; background:#fff; border-radius:2px; left:0; transition:.3s var(--ease);}
+  .hamburger span:nth-child(1){top:0;} .hamburger span:nth-child(2){top:9px;} .hamburger span:nth-child(3){top:18px;}
+  .navbar-toggler[aria-expanded="true"] .hamburger span:nth-child(1){top:9px; transform:rotate(45deg); background:var(--amber);}
+  .navbar-toggler[aria-expanded="true"] .hamburger span:nth-child(2){opacity:0;}
+  .navbar-toggler[aria-expanded="true"] .hamburger span:nth-child(3){top:9px; transform:rotate(-45deg); background:var(--amber);}
+  @media (max-width:991px){.navbar-collapse{background:rgba(30,28,28,.98); margin-top:1rem; padding:1.2rem; border-radius:16px;}}
+
+  /* PAGE HERO */
+  .page-hero{min-height:50vh; display:flex; align-items:center; position:relative;
+    background:url('https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=1920&auto=format&fit=crop') center/cover fixed;}
+  .page-hero::before{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(30,28,28,.65) 0%, rgba(30,28,28,.85) 60%, rgba(30,28,28,1) 100%);}
+  .page-hero-content{position:relative; z-index:2;}
+  .page-hero h1{font-size:clamp(2.8rem,7vw,5.5rem); animation:fadeUp 1s var(--ease) both;}
+  .breadcrumb-custom{color:rgba(255,255,255,.6); font-size:.85rem; letter-spacing:1px;}
+  .breadcrumb-custom a{color:var(--amber); text-decoration:none;}
+  @keyframes fadeUp{from{opacity:0; transform:translateY(35px);} to{opacity:1; transform:translateY(0);}}
+
+  section{padding:6rem 0;}
+  .section-heading{margin-bottom:3rem;}
+  .section-heading h2{font-size:clamp(2.2rem,5vw,3.4rem);}
+
+  .reveal{opacity:0; transform:translateY(40px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal.active{opacity:1; transform:translateY(0);}
+  .reveal-left{opacity:0; transform:translateX(-50px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal-left.active{opacity:1; transform:translateX(0);}
+  .reveal-right{opacity:0; transform:translateX(50px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal-right.active{opacity:1; transform:translateX(0);}
+
+  /* CONTACT INFO CARDS */
+  .info-card{
+    display:flex; gap:1.2rem; align-items:flex-start;
+    background:var(--bg-secondary); border:1px solid rgba(255,255,255,.06); border-radius:20px;
+    padding:1.8rem; transition:transform .45s var(--ease), border-color .45s var(--ease), box-shadow .45s var(--ease);
+  }
+  .info-card:hover{transform:translateY(-6px); box-shadow:0 25px 50px -20px rgba(0,0,0,.6); border-color:rgba(241,161,40,.3);}
+  .info-icon{width:52px; height:52px; min-width:52px; border-radius:14px; background:var(--grad-soft); display:flex; align-items:center; justify-content:center; font-size:1.4rem; color:var(--amber);}
+  .info-card h5{font-family:'Inter'; font-weight:700; margin-bottom:.4rem;}
+  .info-card p, .info-card a{color:rgba(255,255,255,.62); font-size:.9rem; margin:0; text-decoration:none;}
+  .info-card a:hover{color:var(--amber);}
+
+  /* FORM */
+  .form-wrap{background:var(--bg-secondary); border:1px solid rgba(255,255,255,.06); border-radius:26px; padding:2.6rem;}
+  .form-control{
+    background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.12); color:#fff;
+    border-radius:12px; padding:.85rem 1.1rem; font-size:.95rem;
+  }
+  .form-control:focus{
+    background:rgba(255,255,255,.06); border-color:var(--amber); box-shadow:0 0 0 4px rgba(241,161,40,.15); color:#fff;
+  }
+  .form-control::placeholder{color:rgba(255,255,255,.35);}
+  .form-label{font-size:.82rem; letter-spacing:.5px; text-transform:uppercase; color:rgba(255,255,255,.6); margin-bottom:.5rem; font-weight:600;}
+  .form-success{
+    display:none; background:rgba(241,161,40,.12); border:1px solid rgba(241,161,40,.35); color:var(--amber);
+    border-radius:14px; padding:1rem 1.3rem; font-size:.9rem; margin-top:1rem;
+  }
+
+  /* MAPS */
+  .branch-card{background:var(--bg-secondary); border-radius:24px; overflow:hidden; border:1px solid rgba(255,255,255,.07); transition:transform .5s var(--ease), box-shadow .5s var(--ease);}
+  .branch-card:hover{transform:translateY(-6px); box-shadow:0 30px 60px -25px rgba(0,0,0,.6);}
+  .branch-map{height:260px; width:100%; border:0; filter:grayscale(.3) contrast(1.1);}
+  .branch-tag{display:inline-block; background:rgba(229,37,33,.15); color:var(--red); border:1px solid rgba(229,37,33,.35); font-size:.7rem; font-weight:700; letter-spacing:1px; padding:.3rem .8rem; border-radius:50px; text-transform:uppercase; margin-bottom:.8rem;}
+
+  footer{background:var(--bg-secondary); padding:4.5rem 0 1.5rem; border-top:1px solid rgba(255,255,255,.06);}
+  footer h5{font-family:'Bebas Neue'; letter-spacing:1px; font-size:1.3rem; color:var(--amber); margin-bottom:1.2rem;}
+  footer a{color:rgba(255,255,255,.65); text-decoration:none; transition:color .3s ease, padding-left .3s ease;}
+  footer a:hover{color:var(--amber); padding-left:4px;}
+  .social-icon{width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:rgba(255,255,255,.06); color:#fff; transition:all .35s var(--ease);}
+  .social-icon:hover{background:var(--grad); color:#1E1C1C; transform:translateY(-4px) rotate(8deg);}
+
+  .whatsapp-float{position:fixed; bottom:26px; right:26px; z-index:1000; width:60px; height:60px; border-radius:50%; background:#25D366; color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.8rem; box-shadow:0 10px 30px -8px rgba(37,211,102,.6); animation:pulse 2.2s infinite; transition:transform .35s var(--ease);}
+  .whatsapp-float:hover{transform:scale(1.15) rotate(-6deg); color:#fff;}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55);} 70%{box-shadow:0 0 0 18px rgba(37,211,102,0);} 100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}}
+  ::selection{background:var(--amber); color:#1E1C1C;}
+  @media (prefers-reduced-motion: reduce){*{animation:none !important; transition:none !important;}}
+</style>
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">R<span>1</span> FITNESS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="hamburger"><span></span><span></span><span></span></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link nav-book" href="https://wa.me/923333933330" target="_blank" rel="noopener">Book Appointment</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== PAGE HERO ===================== -->
+<header class="page-hero">
+  <div class="container page-hero-content">
+    <p class="breadcrumb-custom mb-3"><a href="index.html">Home</a> &nbsp;/&nbsp; Contact</p>
+    <h1>Get In <span class="text-grad">Touch</span></h1>
+    <p class="text-white-50" style="max-width:560px;">Questions, membership plans, or ready to start? Reach out &mdash; we typically reply within minutes on WhatsApp.</p>
+  </div>
+</header>
+
+<!-- ===================== CONTACT SPLIT ===================== -->
+<section>
+  <div class="container">
+    <div class="row g-5">
+      <!-- LEFT: INFO -->
+      <div class="col-lg-5 reveal-left">
+        <span class="eyebrow">Reach Us</span>
+        <h2 class="mt-2 mb-4">Contact <span class="text-grad">Information</span></h2>
+        <div class="d-flex flex-column gap-3">
+          <div class="info-card">
+            <div class="info-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div><h5>Phone</h5><a href="tel:+923333933330">+92 333 3933330</a></div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div><h5>Email</h5><a href="mailto:dr.riz33@gmail.com">dr.riz33@gmail.com</a></div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="bi bi-clock-fill"></i></div>
+            <div><h5>Working Hours</h5><p>Open 24 Hours &middot; 7 Days a Week</p></div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div><h5>Branches</h5><p>Main Saidpur Road &amp; Commercial Market, Satellite Town, Rawalpindi</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div class="col-lg-7 reveal-right">
+        <div class="form-wrap">
+          <h4 class="mb-1" style="font-family:'Inter'; font-weight:700; font-size:1.5rem;">Send Us a Message</h4>
+          <p class="text-white-50 small mb-4">Fill the form and our team will get back to you shortly.</p>
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="cName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="cName" placeholder="Your full name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="cPhone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="cPhone" placeholder="03XX XXXXXXX" required>
+              </div>
+              <div class="col-12">
+                <label for="cEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="cEmail" placeholder="you@example.com" required>
+              </div>
+              <div class="col-12">
+                <label for="cMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="cMessage" rows="4" placeholder="Tell us about your fitness goals..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-amber ripple w-100 w-md-auto" id="submitBtn">Submit</button>
+                <div class="form-success" id="formSuccess"><i class="bi bi-check-circle-fill me-2"></i>Thanks! Your message has been sent. We'll be in touch shortly.</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MAPS FOR BOTH BRANCHES ===================== -->
+<section style="background:var(--bg-secondary)">
+  <div class="container">
+    <div class="section-heading text-center reveal">
+      <span class="eyebrow">Visit Us</span>
+      <h2 class="mt-2">Find Your Nearest <span class="text-grad">Branch</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-6 reveal-left">
+        <div class="branch-card h-100">
+          <iframe class="branch-map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="R1 Fitness Gym Main Saidpur Road Map" src="https://www.google.com/maps?q=Main+Saidpur+Road+Kali+Tanki+Stop+Satellite+Town+Rawalpindi&output=embed"></iframe>
+          <div class="p-4">
+            <span class="branch-tag">Branch 01</span>
+            <h5 class="mb-2 fw-bold">Main Saidpur Road</h5>
+            <p class="text-white-50 small mb-3">Basement of Kidz Care Hospital / Chughtai Lab, Kali Tanki Stop, Main Saidpur Road, Block E, Satellite Town, Rawalpindi, 46000</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Main+Saidpur+Road+Kali+Tanki+Stop+Satellite+Town+Rawalpindi" target="_blank" rel="noopener" class="btn btn-outline-light-custom btn-sm ripple"><i class="bi bi-geo-alt-fill me-1"></i> Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 reveal-right">
+        <div class="branch-card h-100">
+          <iframe class="branch-map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="R1 Fitness Gym Commercial Market Map" src="https://www.google.com/maps?q=Commercial+Market+Block+B+Satellite+Town+Rawalpindi&output=embed"></iframe>
+          <div class="p-4">
+            <span class="branch-tag">Branch 02</span>
+            <h5 class="mb-2 fw-bold">Commercial Market</h5>
+            <p class="text-white-50 small mb-3">First Floor, under Sports Hub, Plaza B-123, Commercial Market, Block B, Satellite Town, Rawalpindi</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Commercial+Market+Block+B+Satellite+Town+Rawalpindi" target="_blank" rel="noopener" class="btn btn-outline-light-custom btn-sm ripple"><i class="bi bi-geo-alt-fill me-1"></i> Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5 class="display-font" style="font-size:1.8rem;">R1 FITNESS GYM</h5>
+        <p class="text-white-50 small">Rawalpindi's premium 24/7 fitness destination. Two branches, one mission &mdash; transform your body and fuel your strength.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com/r1fitness_gym" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/923333933330" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://wa.me/923333933330" target="_blank" rel="noopener">Book Appointment</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h5>Contact</h5>
+        <ul class="list-unstyled d-flex flex-column gap-2 small">
+          <li class="text-white-50"><i class="bi bi-telephone-fill me-2" style="color:var(--amber)"></i>+92 333 3933330</li>
+          <li class="text-white-50"><i class="bi bi-envelope-fill me-2" style="color:var(--amber)"></i>dr.riz33@gmail.com</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5>Working Hours</h5>
+        <p class="text-white-50 small mb-1"><i class="bi bi-clock-fill me-2" style="color:var(--amber)"></i>Open 24 Hours</p>
+        <p class="text-white-50 small">7 Days a Week</p>
+      </div>
+    </div>
+    <hr class="border-secondary my-4">
+    <p class="text-center text-white-50 small mb-0">&copy; <span id="year"></span> R1 Fitness Gym. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/923333933330" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); });
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){ entry.target.classList.add('active'); io.unobserve(entry.target); }
+    });
+  }, {threshold:0.15});
+  revealEls.forEach(el => io.observe(el));
+
+  // Contact form -> builds a WhatsApp message with the entered details
+  const form = document.getElementById('contactForm');
+  const successBox = document.getElementById('formSuccess');
+  const submitBtn = document.getElementById('submitBtn');
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!form.checkValidity()){
+      form.classList.add('was-validated');
+      return;
+    }
+    const name = document.getElementById('cName').value.trim();
+    const phone = document.getElementById('cPhone').value.trim();
+    const email = document.getElementById('cEmail').value.trim();
+    const message = document.getElementById('cMessage').value.trim();
+
+    const text = `Hello R1 Fitness Gym, my name is ${name}.%0APhone: ${phone}%0AEmail: ${email}%0AMessage: ${message}`;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    successBox.style.display = 'block';
+    setTimeout(() => {
+      window.open(`https://wa.me/923333933330?text=${text}`, '_blank');
+      form.reset();
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Submit';
+    }, 700);
+  });
+</script>
+</body>
+</html>

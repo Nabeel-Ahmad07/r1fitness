@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R1 Fitness Gym | Premium 24/7 Gym in Satellite Town, Rawalpindi</title>
+<meta name="description" content="R1 Fitness Gym is Rawalpindi's premier 24/7 fitness destination in Satellite Town. Certified trainers, modern equipment, bodybuilding, strength training, boxing & women's timings across two branches.">
+<meta name="keywords" content="R1 Fitness Gym, gym in Rawalpindi, Satellite Town gym, 24 hour gym Rawalpindi, bodybuilding gym, ladies gym timings Rawalpindi, Dr Rizwan gym">
+<meta property="og:title" content="R1 Fitness Gym | Premium 24/7 Gym in Rawalpindi">
+<meta property="og:description" content="Transform your body. Fuel your strength. Two branches in Satellite Town, Rawalpindi — open 24/7, 7 days a week.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<style>
+  :root{
+    --bg-primary:#1E1C1C;
+    --bg-secondary:#252323;
+    --amber:#F1A128;
+    --red:#E52521;
+    --white:#FFFFFF;
+    --grad: linear-gradient(135deg,#E52521,#F1A128);
+    --grad-soft: linear-gradient(135deg, rgba(229,37,33,.15), rgba(241,161,40,.15));
+    --ease: cubic-bezier(.16,.84,.44,1);
+  }
+
+  *{scroll-behavior:smooth;}
+
+  body{
+    background:var(--bg-primary);
+    color:var(--white);
+    font-family:'Inter',sans-serif;
+    font-weight:400;
+    overflow-x:hidden;
+  }
+
+  h1,h2,h3,h4,.display-font{
+    font-family:'Bebas Neue',sans-serif;
+    letter-spacing:1px;
+    line-height:1.05;
+  }
+
+  .text-grad{
+    background:var(--grad);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+
+  .eyebrow{
+    font-family:'Inter',sans-serif;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-size:.75rem;
+    color:var(--amber);
+  }
+
+  .btn-amber{
+    background:var(--grad);
+    background-size:200% 200%;
+    color:#1E1C1C;
+    font-weight:700;
+    border:none;
+    border-radius:50px;
+    padding:.9rem 2rem;
+    letter-spacing:.5px;
+    transition:transform .35s var(--ease), box-shadow .35s var(--ease), background-position .6s ease;
+    position:relative;
+    overflow:hidden;
+  }
+  .btn-amber:hover{
+    transform:translateY(-4px) scale(1.02);
+    box-shadow:0 15px 35px -8px rgba(241,161,40,.55);
+    background-position:100% 50%;
+    color:#1E1C1C;
+  }
+  .btn-outline-light-custom{
+    border:1.5px solid rgba(255,255,255,.35);
+    color:#fff;
+    background:rgba(255,255,255,.03);
+    backdrop-filter:blur(6px);
+    border-radius:50px;
+    padding:.9rem 2rem;
+    font-weight:600;
+    letter-spacing:.5px;
+    transition:all .35s var(--ease);
+  }
+  .btn-outline-light-custom:hover{
+    background:#fff;
+    color:#1E1C1C;
+    border-color:#fff;
+    transform:translateY(-4px);
+  }
+
+  /* Ripple */
+  .ripple{position:relative; overflow:hidden;}
+  .ripple::after{
+    content:"";
+    position:absolute; top:50%; left:50%;
+    width:5px; height:5px; background:rgba(255,255,255,.5);
+    border-radius:100%; opacity:0;
+    transform:translate(-50%,-50%);
+  }
+  .ripple:active::after{
+    animation:rip .6s ease-out;
+  }
+  @keyframes rip{
+    0%{opacity:1; width:5px; height:5px;}
+    100%{opacity:0; width:400px; height:400px;}
+  }
+
+  /* NAVBAR */
+  .navbar{
+    padding:1.25rem 0;
+    transition:all .45s var(--ease);
+    background:transparent;
+  }
+  .navbar.scrolled{
+    background:rgba(30,28,28,.85);
+    backdrop-filter:blur(14px);
+    padding:.7rem 0;
+    box-shadow:0 10px 30px -15px rgba(0,0,0,.6);
+    border-bottom:1px solid rgba(241,161,40,.15);
+  }
+  .navbar-brand{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:1.9rem;
+    letter-spacing:2px;
+    color:#fff !important;
+  }
+  .navbar-brand span{color:var(--amber);}
+  .nav-link{
+    color:rgba(255,255,255,.85) !important;
+    font-weight:600;
+    letter-spacing:.5px;
+    margin:0 .6rem;
+    position:relative;
+    transition:color .3s ease;
+  }
+  .nav-link::after{
+    content:"";
+    position:absolute; left:0; bottom:-4px;
+    width:0; height:2px;
+    background:var(--grad);
+    transition:width .35s var(--ease);
+  }
+  .nav-link:hover::after, .nav-link.active::after{width:100%;}
+  .nav-link:hover{color:#fff !important;}
+  .nav-book{
+    background:var(--grad);
+    color:#1E1C1C !important;
+    padding:.55rem 1.4rem !important;
+    border-radius:50px;
+    font-weight:700 !important;
+    margin-left:.5rem;
+    transition:transform .3s var(--ease), box-shadow .3s var(--ease);
+  }
+  .nav-book:hover{transform:translateY(-3px); box-shadow:0 10px 25px -8px rgba(241,161,40,.6); color:#1E1C1C !important;}
+  .nav-book::after{display:none;}
+
+  .navbar-toggler{border:none; padding:0;}
+  .navbar-toggler:focus{box-shadow:none;}
+  .hamburger{width:28px; height:20px; position:relative;}
+  .hamburger span{
+    display:block; position:absolute; height:2px; width:100%;
+    background:#fff; border-radius:2px; left:0;
+    transition:.3s var(--ease);
+  }
+  .hamburger span:nth-child(1){top:0;}
+  .hamburger span:nth-child(2){top:9px;}
+  .hamburger span:nth-child(3){top:18px;}
+  .navbar-toggler[aria-expanded="true"] .hamburger span:nth-child(1){top:9px; transform:rotate(45deg); background:var(--amber);}
+  .navbar-toggler[aria-expanded="true"] .hamburger span:nth-child(2){opacity:0;}
+  .navbar-toggler[aria-expanded="true"] .hamburger span:nth-child(3){top:9px; transform:rotate(-45deg); background:var(--amber);}
+
+  /* HERO */
+  .hero{
+    min-height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    background:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop') center/cover fixed;
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(30,28,28,.55) 0%, rgba(30,28,28,.75) 55%, rgba(30,28,28,.97) 100%);
+  }
+  .hero-content{position:relative; z-index:2;}
+  .hero-badge{
+    display:inline-flex; align-items:center; gap:.5rem;
+    background:rgba(241,161,40,.12);
+    border:1px solid rgba(241,161,40,.4);
+    color:var(--amber);
+    padding:.45rem 1.1rem;
+    border-radius:50px;
+    font-size:.78rem;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-bottom:1.5rem;
+    animation:fadeUp .9s var(--ease) both;
+  }
+  .hero h1{
+    font-size:clamp(3rem,8vw,6.5rem);
+    margin-bottom:1.2rem;
+    animation:fadeUp 1s var(--ease) .1s both;
+  }
+  .hero p.lead{
+    max-width:560px;
+    color:rgba(255,255,255,.8);
+    font-size:1.15rem;
+    animation:fadeUp 1s var(--ease) .25s both;
+  }
+  .hero .hero-btns{animation:fadeUp 1s var(--ease) .4s both;}
+
+  @keyframes fadeUp{
+    from{opacity:0; transform:translateY(35px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+
+  .scroll-indicator{
+    position:absolute; bottom:32px; left:50%; transform:translateX(-50%);
+    z-index:2; color:rgba(255,255,255,.7);
+    display:flex; flex-direction:column; align-items:center; gap:.5rem;
+    font-size:.7rem; letter-spacing:2px; text-transform:uppercase;
+  }
+  .scroll-indicator .line{
+    width:1px; height:40px; background:linear-gradient(180deg, var(--amber), transparent);
+    animation:scrollLine 2s ease-in-out infinite;
+  }
+  @keyframes scrollLine{
+    0%{transform:scaleY(0); transform-origin:top;}
+    50%{transform:scaleY(1); transform-origin:top;}
+    50.1%{transform-origin:bottom;}
+    100%{transform:scaleY(0); transform-origin:bottom;}
+  }
+
+  section{padding:6.5rem 0; position:relative;}
+  .section-tight{padding:4rem 0;}
+
+  .section-heading{margin-bottom:3.5rem;}
+  .section-heading h2{font-size:clamp(2.4rem,5vw,3.6rem);}
+
+  /* REVEAL */
+  .reveal{opacity:0; transform:translateY(40px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal.active{opacity:1; transform:translateY(0);}
+  .reveal-left{opacity:0; transform:translateX(-50px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal-left.active{opacity:1; transform:translateX(0);}
+  .reveal-right{opacity:0; transform:translateX(50px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal-right.active{opacity:1; transform:translateX(0);}
+  .reveal-zoom{opacity:0; transform:scale(.85); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal-zoom.active{opacity:1; transform:scale(1);}
+
+  /* WHY CHOOSE US */
+  .why-card{
+    background:var(--bg-secondary);
+    border:1px solid rgba(255,255,255,.06);
+    border-radius:20px;
+    padding:2.2rem 1.6rem;
+    height:100%;
+    transition:transform .45s var(--ease), box-shadow .45s var(--ease), border-color .45s var(--ease);
+    position:relative;
+    overflow:hidden;
+  }
+  .why-card::before{
+    content:"";
+    position:absolute; top:0; left:0; right:0; height:3px;
+    background:var(--grad);
+    transform:scaleX(0); transform-origin:left;
+    transition:transform .5s var(--ease);
+  }
+  .why-card:hover::before{transform:scaleX(1);}
+  .why-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 50px -20px rgba(0,0,0,.6);
+    border-color:rgba(241,161,40,.3);
+  }
+  .why-icon{
+    width:58px; height:58px; border-radius:16px;
+    background:var(--grad-soft);
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.6rem; color:var(--amber);
+    margin-bottom:1.2rem;
+    transition:transform .5s var(--ease), background .5s var(--ease);
+  }
+  .why-card:hover .why-icon{
+    transform:rotate(-8deg) scale(1.1);
+    background:var(--grad);
+    color:#1E1C1C;
+  }
+  .why-card h4{font-size:1.3rem; margin-bottom:.6rem; font-family:'Inter',sans-serif; font-weight:700; letter-spacing:0;}
+  .why-card p{color:rgba(255,255,255,.6); font-size:.92rem; margin:0;}
+
+  /* SERVICES */
+  .service-card{
+    background:linear-gradient(160deg, var(--bg-secondary), #1c1a1a);
+    border-radius:22px;
+    padding:2.4rem 1.8rem;
+    height:100%;
+    border:1px solid rgba(255,255,255,.06);
+    transition:transform .5s var(--ease), box-shadow .5s var(--ease);
+    position:relative;
+  }
+  .service-card:hover{transform:translateY(-8px) rotate(-.3deg); box-shadow:0 30px 60px -25px rgba(229,37,33,.35);}
+  .service-num{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:3rem;
+    color:rgba(255,255,255,.06);
+    position:absolute; top:1rem; right:1.4rem;
+  }
+  .service-card i{font-size:2rem; color:var(--amber); margin-bottom:1rem; display:inline-block; transition:transform .4s var(--ease);}
+  .service-card:hover i{transform:scale(1.15) rotate(5deg); color:var(--red);}
+  .service-card h4{font-family:'Inter',sans-serif; font-weight:700; font-size:1.25rem;}
+  .service-card p{color:rgba(255,255,255,.6); font-size:.9rem; margin-bottom:0;}
+
+  /* BRANCHES */
+  .branch-card{
+    background:var(--bg-secondary);
+    border-radius:24px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.07);
+    transition:transform .5s var(--ease), box-shadow .5s var(--ease);
+  }
+  .branch-card:hover{transform:translateY(-6px); box-shadow:0 30px 60px -25px rgba(0,0,0,.6);}
+  .branch-map{height:230px; width:100%; border:0; filter:grayscale(.3) contrast(1.1);}
+  .branch-tag{
+    display:inline-block;
+    background:rgba(229,37,33,.15);
+    color:var(--red);
+    border:1px solid rgba(229,37,33,.35);
+    font-size:.7rem; font-weight:700; letter-spacing:1px;
+    padding:.3rem .8rem; border-radius:50px; text-transform:uppercase;
+    margin-bottom:.8rem;
+  }
+  .branch-highlight{
+    display:flex; align-items:center; gap:.6rem;
+    font-size:.88rem; color:rgba(255,255,255,.75);
+    margin-bottom:.55rem;
+  }
+  .branch-highlight i{color:var(--amber); font-size:1rem;}
+
+  /* TRANSFORMATION / COUNTERS */
+  .counters{
+    background:linear-gradient(rgba(30,28,28,.9), rgba(30,28,28,.94)), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1920&auto=format&fit=crop') center/cover fixed;
+    border-radius:0;
+    padding:5.5rem 0;
+  }
+  .counter-num{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:clamp(2.8rem,6vw,4.5rem);
+    background:var(--grad);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    line-height:1;
+  }
+  .counter-label{
+    color:rgba(255,255,255,.7);
+    letter-spacing:1px; text-transform:uppercase; font-size:.82rem; font-weight:600;
+  }
+
+  /* TESTIMONIALS */
+  .testi-card{
+    background:var(--bg-secondary);
+    border-radius:22px;
+    padding:2.6rem;
+    border:1px solid rgba(255,255,255,.06);
+    height:100%;
+  }
+  .testi-quote{font-size:2.4rem; color:var(--amber); opacity:.5; font-family:Georgia,serif; line-height:1;}
+  .testi-text{color:rgba(255,255,255,.85); font-size:1.05rem; min-height:100px;}
+  .testi-name{font-weight:700; color:#fff;}
+  .testi-role{color:var(--amber); font-size:.82rem; letter-spacing:.5px;}
+  .carousel-control-prev, .carousel-control-next{width:5%;}
+  .carousel-indicators [data-bs-target]{background:var(--amber); width:8px; height:8px; border-radius:50%;}
+
+  /* OWNER */
+  .owner-wrap{
+    background:linear-gradient(135deg, var(--bg-secondary), #1a1818);
+    border-radius:28px;
+    padding:3.5rem;
+    border:1px solid rgba(255,255,255,.06);
+    overflow:hidden;
+    position:relative;
+  }
+  .owner-img{
+    border-radius:20px;
+    overflow:hidden;
+    position:relative;
+  }
+  .owner-img img{transition:transform .8s var(--ease);}
+  .owner-img:hover img{transform:scale(1.06);}
+  .owner-frame{
+    position:absolute; inset:-14px;
+    border:2px solid var(--amber);
+    border-radius:24px;
+    z-index:-1;
+  }
+
+  /* INSTAGRAM */
+  .insta-item{
+    position:relative; overflow:hidden; border-radius:16px; aspect-ratio:1/1;
+  }
+  .insta-item img{width:100%; height:100%; object-fit:cover; transition:transform .6s var(--ease);}
+  .insta-overlay{
+    position:absolute; inset:0;
+    background:linear-gradient(160deg, rgba(229,37,33,.75), rgba(241,161,40,.75));
+    display:flex; align-items:center; justify-content:center;
+    opacity:0; transition:opacity .4s ease;
+    font-size:1.6rem; color:#fff;
+  }
+  .insta-item:hover img{transform:scale(1.15);}
+  .insta-item:hover .insta-overlay{opacity:1;}
+
+  /* FOOTER */
+  footer{
+    background:var(--bg-secondary);
+    padding:4.5rem 0 1.5rem;
+    border-top:1px solid rgba(255,255,255,.06);
+  }
+  footer h5{font-family:'Bebas Neue'; letter-spacing:1px; font-size:1.3rem; color:var(--amber); margin-bottom:1.2rem;}
+  footer a{color:rgba(255,255,255,.65); text-decoration:none; transition:color .3s ease, padding-left .3s ease;}
+  footer a:hover{color:var(--amber); padding-left:4px;}
+  .social-icon{
+    width:40px; height:40px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(255,255,255,.06); color:#fff;
+    transition:all .35s var(--ease);
+  }
+  .social-icon:hover{background:var(--grad); color:#1E1C1C; transform:translateY(-4px) rotate(8deg);}
+
+  /* WHATSAPP FLOAT */
+  .whatsapp-float{
+    position:fixed; bottom:26px; right:26px; z-index:1000;
+    width:60px; height:60px; border-radius:50%;
+    background:#25D366; color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.8rem; box-shadow:0 10px 30px -8px rgba(37,211,102,.6);
+    animation:pulse 2.2s infinite;
+    transition:transform .35s var(--ease);
+  }
+  .whatsapp-float:hover{transform:scale(1.15) rotate(-6deg); color:#fff;}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(37,211,102,.55);}
+    70%{box-shadow:0 0 0 18px rgba(37,211,102,0);}
+    100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
+  }
+
+  ::selection{background:var(--amber); color:#1E1C1C;}
+
+  @media (max-width:991px){
+    .navbar-collapse{
+      background:rgba(30,28,28,.98);
+      margin-top:1rem; padding:1.2rem; border-radius:16px;
+      backdrop-filter:blur(10px);
+    }
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">R<span>1</span> FITNESS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="hamburger"><span></span><span></span><span></span></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link nav-book" href="https://wa.me/923333933330" target="_blank" rel="noopener">Book Appointment</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="container hero-content">
+    <div class="row">
+      <div class="col-lg-8">
+        <span class="hero-badge"><i class="bi bi-lightning-charge-fill"></i> Open 24/7 &middot; Satellite Town, Rawalpindi</span>
+        <h1>Transform Your Body.<br><span class="text-grad">Fuel Your Strength.</span></h1>
+        <p class="lead">R1 Fitness Gym is Rawalpindi's premium training ground &mdash; certified coaches, modern equipment, and a community built to push you past your limits, every single day of the year.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4 hero-btns">
+          <a href="https://wa.me/923333933330" target="_blank" rel="noopener" class="btn btn-amber ripple"><i class="bi bi-whatsapp me-2"></i>Book Appointment</a>
+          <a href="#services" class="btn btn-outline-light-custom ripple">Explore Gym</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator"><span>Scroll</span><span class="line"></span></div>
+</header>
+
+<!-- ===================== WHY CHOOSE US ===================== -->
+<section id="why">
+  <div class="container">
+    <div class="section-heading text-center reveal">
+      <span class="eyebrow">Why R1 Fitness</span>
+      <h2 class="mt-2">Built Different, <span class="text-grad">Built for You</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-6 col-md-4 col-lg-3 reveal">
+        <div class="why-card"><div class="why-icon"><i class="bi bi-clock-history"></i></div><h4>24/7 Open</h4><p>Train on your schedule, day or night, every day of the week.</p></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 reveal" style="transition-delay:.08s">
+        <div class="why-card"><div class="why-icon"><i class="bi bi-patch-check-fill"></i></div><h4>Certified Trainers</h4><p>Expert coaches guiding every rep, every set, every goal.</p></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 reveal" style="transition-delay:.16s">
+        <div class="why-card"><div class="why-icon"><i class="bi bi-cpu"></i></div><h4>Modern Equipment</h4><p>Premium machines and free weights, always well maintained.</p></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 reveal" style="transition-delay:.24s">
+        <div class="why-card"><div class="why-icon"><i class="bi bi-lightning-fill"></i></div><h4>Strength Training</h4><p>Progressive programs built to build real, lasting power.</p></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 reveal">
+        <div class="why-card"><div class="why-icon"><i class="bi bi-award-fill"></i></div><h4>Bodybuilding</h4><p>Serious mass and physique training for serious lifters.</p></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 reveal" style="transition-delay:.08s">
+        <div class="why-card"><div class="why-icon"><i class="bi bi-heart-pulse-fill"></i></div><h4>Cardio</h4><p>Dedicated cardio zone to torch fat and build endurance.</p></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 reveal" style="transition-delay:.16s">
+        <div class="why-card"><div class="why-icon"><i class="bi bi-emoji-sunglasses"></i></div><h4>Boxing</h4><p>Bag work and boxing training to sharpen power and speed.</p></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3 reveal" style="transition-delay:.24s">
+        <div class="why-card"><div class="why-icon"><i class="bi bi-graph-up-arrow"></i></div><h4>Transformation</h4><p>Real people, real results &mdash; a proven path to your goal.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section id="services" style="background:var(--bg-secondary)">
+  <div class="container">
+    <div class="section-heading text-center reveal">
+      <span class="eyebrow">What We Offer</span>
+      <h2 class="mt-2">Our <span class="text-grad">Services</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="service-card"><span class="service-num">01</span><i class="bi bi-trophy"></i><h4>Bodybuilding</h4><p>Structured hypertrophy programs for serious mass gains.</p></div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal" style="transition-delay:.08s">
+        <div class="service-card"><span class="service-num">02</span><i class="bi bi-bar-chart-steps"></i><h4>Strength Training</h4><p>Build raw power with progressive resistance programming.</p></div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal" style="transition-delay:.16s">
+        <div class="service-card"><span class="service-num">03</span><i class="bi bi-activity"></i><h4>Cardio</h4><p>Boost stamina and heart health with our cardio zone.</p></div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal" style="transition-delay:.24s">
+        <div class="service-card"><span class="service-num">04</span><i class="bi bi-emoji-dizzy"></i><h4>Boxing</h4><p>Sharpen reflexes and burn fat with real boxing training.</p></div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="service-card"><span class="service-num">05</span><i class="bi bi-fire"></i><h4>Weight Loss</h4><p>Custom fat-loss plans that fit your lifestyle and body.</p></div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal" style="transition-delay:.08s">
+        <div class="service-card"><span class="service-num">06</span><i class="bi bi-arm-flex"></i><h4>Muscle Gain</h4><p>Nutrition-backed programs to pack on lean, quality muscle.</p></div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal" style="transition-delay:.16s">
+        <div class="service-card"><span class="service-num">07</span><i class="bi bi-person-check"></i><h4>Personal Training</h4><p>One-on-one coaching tailored to your exact goals.</p></div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal" style="transition-delay:.24s">
+        <div class="service-card"><span class="service-num">08</span><i class="bi bi-clipboard2-pulse"></i><h4>Fitness Coaching</h4><p>Ongoing guidance to keep you accountable and on track.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BRANCHES ===================== -->
+<section id="branches">
+  <div class="container">
+    <div class="section-heading text-center reveal">
+      <span class="eyebrow">Find Us</span>
+      <h2 class="mt-2">Our <span class="text-grad">Branches</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-6 reveal-left">
+        <div class="branch-card h-100">
+          <iframe class="branch-map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="R1 Fitness Gym Main Saidpur Road Map" src="https://www.google.com/maps?q=Main+Saidpur+Road+Kali+Tanki+Stop+Satellite+Town+Rawalpindi&output=embed"></iframe>
+          <div class="p-4">
+            <span class="branch-tag">Branch 01</span>
+            <h4 class="mb-2 fw-bold">Main Saidpur Road</h4>
+            <p class="text-white-50 small mb-3">Basement of Kidz Care Hospital / Chughtai Lab, Kali Tanki Stop, Main Saidpur Road, Block E, Satellite Town, Rawalpindi, 46000</p>
+            <div class="branch-highlight"><i class="bi bi-gender-female"></i> Exclusive Ladies Timings</div>
+            <div class="branch-highlight"><i class="bi bi-p-circle"></i> Free Parking &amp; Street Parking</div>
+            <div class="branch-highlight"><i class="bi bi-door-open"></i> Gender Neutral Restroom</div>
+            <div class="branch-highlight"><i class="bi bi-clock-history"></i> Previously Known as Oxygen Gym</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Main+Saidpur+Road+Kali+Tanki+Stop+Satellite+Town+Rawalpindi" target="_blank" rel="noopener" class="btn btn-outline-light-custom btn-sm mt-3 ripple"><i class="bi bi-geo-alt-fill me-1"></i> Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 reveal-right">
+        <div class="branch-card h-100">
+          <iframe class="branch-map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="R1 Fitness Gym Commercial Market Map" src="https://www.google.com/maps?q=Commercial+Market+Block+B+Satellite+Town+Rawalpindi&output=embed"></iframe>
+          <div class="p-4">
+            <span class="branch-tag">Branch 02</span>
+            <h4 class="mb-2 fw-bold">Commercial Market</h4>
+            <p class="text-white-50 small mb-3">First Floor, under Sports Hub, Plaza B-123, Commercial Market, Block B, Satellite Town, Rawalpindi</p>
+            <div class="branch-highlight"><i class="bi bi-arrows-fullscreen"></i> Large Cardio Area</div>
+            <div class="branch-highlight"><i class="bi bi-cpu"></i> Latest Equipment</div>
+            <div class="branch-highlight"><i class="bi bi-clock-history"></i> 24/7 Access</div>
+            <div class="branch-highlight"><i class="bi bi-mortarboard"></i> Perfect for Students</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Commercial+Market+Block+B+Satellite+Town+Rawalpindi" target="_blank" rel="noopener" class="btn btn-outline-light-custom btn-sm mt-3 ripple"><i class="bi bi-geo-alt-fill me-1"></i> Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRANSFORMATION / COUNTERS ===================== -->
+<section class="counters" id="transform">
+  <div class="container text-center">
+    <div class="section-heading reveal">
+      <span class="eyebrow">The R1 Difference</span>
+      <h2 class="mt-2">Real Transformation. <span class="text-grad">Real Results.</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-6 col-md-3 reveal-zoom">
+        <div class="counter-num" data-target="1000" data-suffix="+">0</div>
+        <div class="counter-label">Happy Members</div>
+      </div>
+      <div class="col-6 col-md-3 reveal-zoom" style="transition-delay:.1s">
+        <div class="counter-num" data-target="10" data-suffix="+">0</div>
+        <div class="counter-label">Professional Trainers</div>
+      </div>
+      <div class="col-6 col-md-3 reveal-zoom" style="transition-delay:.2s">
+        <div class="counter-num" data-target="2" data-suffix="">0</div>
+        <div class="counter-label">Branches</div>
+      </div>
+      <div class="col-6 col-md-3 reveal-zoom" style="transition-delay:.3s">
+        <div class="counter-num" data-static="24/7">0</div>
+        <div class="counter-label">Always Open</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section id="testimonials" style="background:var(--bg-secondary)">
+  <div class="container">
+    <div class="section-heading text-center reveal">
+      <span class="eyebrow">Member Voices</span>
+      <h2 class="mt-2">What Our <span class="text-grad">Members Say</span></h2>
+    </div>
+    <div id="testiCarousel" class="carousel slide reveal" data-bs-ride="carousel" data-bs-interval="4500">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="testi-card text-center mx-auto">
+                <div class="testi-quote">&ldquo;</div>
+                <p class="testi-text">Great gym with excellent equipment and motivating atmosphere.</p>
+                <div class="testi-name">Verified Member</div>
+                <div class="testi-role">Google Review</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="testi-card text-center mx-auto">
+                <div class="testi-quote">&ldquo;</div>
+                <p class="testi-text">Best gym at economic level. The staff is very good and the owner is very humble.</p>
+                <div class="testi-name">Local Guide</div>
+                <div class="testi-role">Google Review</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="testi-card text-center mx-auto">
+                <div class="testi-quote">&ldquo;</div>
+                <p class="testi-text">A very good gym, 24/7 open, at a reasonable fee.</p>
+                <div class="testi-name">Reviewer</div>
+                <div class="testi-role">Google Review</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="testi-card text-center mx-auto">
+                <div class="testi-quote">&ldquo;</div>
+                <p class="testi-text">Neat and clean gym. I recommend everyone who wants to do exercise in a clean and good environment.</p>
+                <div class="testi-name">Community Member</div>
+                <div class="testi-role">Google Review</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="testi-card text-center mx-auto">
+                <div class="testi-quote">&ldquo;</div>
+                <p class="testi-text">The experience here, the environment, owners, and trainers, they are exceptionally good. Perfect place to start a fitness journey.</p>
+                <div class="testi-name">Dr. Simab Saftar</div>
+                <div class="testi-role">Google Review</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-indicators position-relative mt-4">
+        <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OWNER ===================== -->
+<section id="owner">
+  <div class="container">
+    <div class="owner-wrap reveal">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="owner-img position-relative">
+            <div class="owner-frame d-none d-lg-block"></div>
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop" class="img-fluid rounded-4 w-100" alt="Dr Rizwan, owner of R1 Fitness Gym" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <span class="eyebrow">Leadership</span>
+          <h2 class="mt-2 mb-3">Meet the Owner<br><span class="text-grad">Dr. Rizwan</span></h2>
+          <p class="text-white-50">Dr. Rizwan founded R1 Fitness Gym on a simple belief: that a world-class training environment should be accessible to every member of the Satellite Town community. His hands-on leadership and genuine passion for fitness shape every corner of both branches &mdash; from the equipment on the floor to the culture among the trainers.</p>
+          <p class="text-white-50">Known by members for his humility and approachability, Dr. Rizwan is dedicated to the growth of every person who walks through the door, whether they're chasing their first pull-up or preparing for a competition stage. His commitment to a clean, welcoming, and motivating space is what keeps members coming back, day after day.</p>
+          <a href="https://wa.me/923333933330" target="_blank" rel="noopener" class="btn btn-amber ripple mt-2"><i class="bi bi-whatsapp me-2"></i>Talk to Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INSTAGRAM ===================== -->
+<section id="instagram" style="background:var(--bg-secondary)">
+  <div class="container">
+    <div class="section-heading text-center reveal">
+      <span class="eyebrow">Follow The Journey</span>
+      <h2 class="mt-2">Us On <span class="text-grad">Instagram</span></h2>
+      <p class="text-white-50">@r1fitness_gym</p>
+    </div>
+    <div class="row g-3 reveal">
+      <div class="col-6 col-md-4 col-lg-2"><div class="insta-item"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=500&auto=format&fit=crop" alt="Gym workout at R1 Fitness Gym" loading="lazy"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="insta-item"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=500&auto=format&fit=crop" alt="Weight training at R1 Fitness Gym" loading="lazy"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="insta-item"><img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=500&auto=format&fit=crop" alt="Strength training session" loading="lazy"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="insta-item"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=500&auto=format&fit=crop" alt="Trainer coaching a member" loading="lazy"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="insta-item"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=500&auto=format&fit=crop" alt="Gym equipment floor" loading="lazy"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></div></div>
+      <div class="col-6 col-md-4 col-lg-2"><div class="insta-item"><img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=500&auto=format&fit=crop" alt="Boxing training at R1 Fitness Gym" loading="lazy"><div class="insta-overlay"><i class="bi bi-instagram"></i></div></div></div>
+    </div>
+    <div class="text-center mt-4 reveal">
+      <a href="https://instagram.com/r1fitness_gym" target="_blank" rel="noopener" class="btn btn-outline-light-custom ripple"><i class="bi bi-instagram me-2"></i>Follow on Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5 class="display-font" style="font-size:1.8rem;">R1 FITNESS GYM</h5>
+        <p class="text-white-50 small">Rawalpindi's premium 24/7 fitness destination. Two branches, one mission &mdash; transform your body and fuel your strength.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com/r1fitness_gym" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/923333933330" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://wa.me/923333933330" target="_blank" rel="noopener">Book Appointment</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h5>Contact</h5>
+        <ul class="list-unstyled d-flex flex-column gap-2 small">
+          <li class="text-white-50"><i class="bi bi-telephone-fill me-2 text-amber" style="color:var(--amber)"></i>+92 333 3933330</li>
+          <li class="text-white-50"><i class="bi bi-envelope-fill me-2" style="color:var(--amber)"></i>dr.riz33@gmail.com</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5>Working Hours</h5>
+        <p class="text-white-50 small mb-1"><i class="bi bi-clock-fill me-2" style="color:var(--amber)"></i>Open 24 Hours</p>
+        <p class="text-white-50 small">7 Days a Week</p>
+      </div>
+    </div>
+    <hr class="border-secondary my-4">
+    <p class="text-center text-white-50 small mb-0">&copy; <span id="year"></span> R1 Fitness Gym. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/923333933330" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Navbar scroll effect
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-zoom');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('active');
+        io.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.15});
+  revealEls.forEach(el => io.observe(el));
+
+  // Animated counters
+  const counters = document.querySelectorAll('.counter-num');
+  const counterIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const el = entry.target;
+        if(el.dataset.static){
+          el.textContent = el.dataset.static;
+        } else {
+          const target = parseInt(el.dataset.target, 10);
+          const suffix = el.dataset.suffix || '';
+          let count = 0;
+          const duration = 1600;
+          const stepTime = Math.max(Math.floor(duration / target), 15);
+          const timer = setInterval(() => {
+            count++;
+            el.textContent = count + suffix;
+            if(count >= target){
+              clearInterval(timer);
+              el.textContent = target + suffix;
+            }
+          }, stepTime);
+        }
+        counterIO.unobserve(el);
+      }
+    });
+  }, {threshold:0.4});
+  counters.forEach(el => counterIO.observe(el));
+</script>
+</body>
+</html>

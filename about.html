@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | R1 Fitness Gym Rawalpindi</title>
+<meta name="description" content="Learn the story of R1 Fitness Gym, our mission, vision, and philosophy under the leadership of Dr Rizwan. Two branches in Satellite Town, Rawalpindi, open 24/7.">
+<meta name="keywords" content="R1 Fitness Gym story, Dr Rizwan gym owner, gym mission vision Rawalpindi, about R1 Fitness Gym">
+<meta property="og:title" content="About R1 Fitness Gym">
+<meta property="og:description" content="The story, mission and people behind Rawalpindi's premium 24/7 fitness destination.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<style>
+  :root{
+    --bg-primary:#1E1C1C;
+    --bg-secondary:#252323;
+    --amber:#F1A128;
+    --red:#E52521;
+    --white:#FFFFFF;
+    --grad: linear-gradient(135deg,#E52521,#F1A128);
+    --grad-soft: linear-gradient(135deg, rgba(229,37,33,.15), rgba(241,161,40,.15));
+    --ease: cubic-bezier(.16,.84,.44,1);
+  }
+  *{scroll-behavior:smooth;}
+  body{background:var(--bg-primary); color:var(--white); font-family:'Inter',sans-serif; overflow-x:hidden;}
+  h1,h2,h3,h4,.display-font{font-family:'Bebas Neue',sans-serif; letter-spacing:1px; line-height:1.05;}
+  .text-grad{background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .eyebrow{font-weight:700; letter-spacing:3px; text-transform:uppercase; font-size:.75rem; color:var(--amber);}
+
+  .btn-amber{background:var(--grad); background-size:200% 200%; color:#1E1C1C; font-weight:700; border:none; border-radius:50px; padding:.9rem 2rem; letter-spacing:.5px; transition:transform .35s var(--ease), box-shadow .35s var(--ease), background-position .6s ease;}
+  .btn-amber:hover{transform:translateY(-4px) scale(1.02); box-shadow:0 15px 35px -8px rgba(241,161,40,.55); background-position:100% 50%; color:#1E1C1C;}
+  .btn-outline-light-custom{border:1.5px solid rgba(255,255,255,.35); color:#fff; background:rgba(255,255,255,.03); backdrop-filter:blur(6px); border-radius:50px; padding:.9rem 2rem; font-weight:600; letter-spacing:.5px; transition:all .35s var(--ease);}
+  .btn-outline-light-custom:hover{background:#fff; color:#1E1C1C; border-color:#fff; transform:translateY(-4px);}
+  .ripple{position:relative; overflow:hidden;}
+  .ripple::after{content:""; position:absolute; top:50%; left:50%; width:5px; height:5px; background:rgba(255,255,255,.5); border-radius:100%; opacity:0; transform:translate(-50%,-50%);}
+  .ripple:active::after{animation:rip .6s ease-out;}
+  @keyframes rip{0%{opacity:1; width:5px; height:5px;} 100%{opacity:0; width:400px; height:400px;}}
+
+  /* NAVBAR */
+  .navbar{padding:1.25rem 0; transition:all .45s var(--ease); background:rgba(30,28,28,.85); backdrop-filter:blur(14px); border-bottom:1px solid rgba(241,161,40,.15);}
+  .navbar.scrolled{padding:.7rem 0; box-shadow:0 10px 30px -15px rgba(0,0,0,.6);}
+  .navbar-brand{font-family:'Bebas Neue',sans-serif; font-size:1.9rem; letter-spacing:2px; color:#fff !important;}
+  .navbar-brand span{color:var(--amber);}
+  .nav-link{color:rgba(255,255,255,.85) !important; font-weight:600; letter-spacing:.5px; margin:0 .6rem; position:relative; transition:color .3s ease;}
+  .nav-link::after{content:""; position:absolute; left:0; bottom:-4px; width:0; height:2px; background:var(--grad); transition:width .35s var(--ease);}
+  .nav-link:hover::after, .nav-link.active::after{width:100%;}
+  .nav-link:hover{color:#fff !important;}
+  .nav-book{background:var(--grad); color:#1E1C1C !important; padding:.55rem 1.4rem !important; border-radius:50px; font-weight:700 !important; margin-left:.5rem; transition:transform .3s var(--ease), box-shadow .3s var(--ease);}
+  .nav-book:hover{transform:translateY(-3px); box-shadow:0 10px 25px -8px rgba(241,161,40,.6); color:#1E1C1C !important;}
+  .nav-book::after{display:none;}
+  .navbar-toggler{border:none; padding:0;}
+  .navbar-toggler:focus{box-shadow:none;}
+  .hamburger{width:28px; height:20px; position:relative;}
+  .hamburger span{display:block; position:absolute; height:2px; width:100%; background:#fff; border-radius:2px; left:0; transition:.3s var(--ease);}
+  .hamburger span:nth-child(1){top:0;} .hamburger span:nth-child(2){top:9px;} .hamburger span:nth-child(3){top:18px;}
+  .navbar-toggler[aria-expanded="true"] .hamburger span:nth-child(1){top:9px; transform:rotate(45deg); background:var(--amber);}
+  .navbar-toggler[aria-expanded="true"] .hamburger span:nth-child(2){opacity:0;}
+  .navbar-toggler[aria-expanded="true"] .hamburger span:nth-child(3){top:9px; transform:rotate(-45deg); background:var(--amber);}
+  @media (max-width:991px){.navbar-collapse{background:rgba(30,28,28,.98); margin-top:1rem; padding:1.2rem; border-radius:16px;}}
+
+  /* PAGE HERO */
+  .page-hero{
+    min-height:65vh; display:flex; align-items:center; position:relative; margin-top:0;
+    background:url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1920&auto=format&fit=crop') center/cover fixed;
+  }
+  .page-hero::before{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(30,28,28,.65) 0%, rgba(30,28,28,.85) 60%, rgba(30,28,28,1) 100%);}
+  .page-hero-content{position:relative; z-index:2;}
+  .page-hero h1{font-size:clamp(2.8rem,7vw,5.5rem); animation:fadeUp 1s var(--ease) both;}
+  .breadcrumb-custom{color:rgba(255,255,255,.6); font-size:.85rem; letter-spacing:1px;}
+  .breadcrumb-custom a{color:var(--amber); text-decoration:none;}
+  @keyframes fadeUp{from{opacity:0; transform:translateY(35px);} to{opacity:1; transform:translateY(0);}}
+
+  section{padding:6rem 0;}
+  .section-heading{margin-bottom:3rem;}
+  .section-heading h2{font-size:clamp(2.2rem,5vw,3.4rem);}
+
+  .reveal{opacity:0; transform:translateY(40px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal.active{opacity:1; transform:translateY(0);}
+  .reveal-left{opacity:0; transform:translateX(-50px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal-left.active{opacity:1; transform:translateX(0);}
+  .reveal-right{opacity:0; transform:translateX(50px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal-right.active{opacity:1; transform:translateX(0);}
+
+  /* STORY */
+  .story-img{border-radius:24px; overflow:hidden; position:relative;}
+  .story-img img{transition:transform .8s var(--ease);}
+  .story-img:hover img{transform:scale(1.06);}
+  .story-frame{position:absolute; inset:-14px; border:2px solid var(--amber); border-radius:28px; z-index:-1;}
+
+  /* MISSION VISION PHILOSOPHY */
+  .mvp-card{
+    background:var(--bg-secondary); border:1px solid rgba(255,255,255,.06); border-radius:22px;
+    padding:2.6rem 2rem; height:100%; transition:transform .5s var(--ease), box-shadow .5s var(--ease), border-color .5s var(--ease);
+    position:relative; overflow:hidden;
+  }
+  .mvp-card::before{content:""; position:absolute; top:0; left:0; right:0; height:3px; background:var(--grad); transform:scaleX(0); transform-origin:left; transition:transform .5s var(--ease);}
+  .mvp-card:hover::before{transform:scaleX(1);}
+  .mvp-card:hover{transform:translateY(-8px); box-shadow:0 25px 50px -20px rgba(0,0,0,.6); border-color:rgba(241,161,40,.3);}
+  .mvp-icon{width:60px; height:60px; border-radius:16px; background:var(--grad-soft); display:flex; align-items:center; justify-content:center; font-size:1.7rem; color:var(--amber); margin-bottom:1.3rem;}
+  .mvp-card h4{font-family:'Inter',sans-serif; font-weight:700; font-size:1.35rem; margin-bottom:.7rem;}
+  .mvp-card p{color:rgba(255,255,255,.62); font-size:.92rem; margin:0;}
+
+  /* OWNER */
+  .owner-wrap{background:linear-gradient(135deg, var(--bg-secondary), #1a1818); border-radius:28px; padding:3.5rem; border:1px solid rgba(255,255,255,.06);}
+  .owner-img{border-radius:20px; overflow:hidden; position:relative;}
+  .owner-img img{transition:transform .8s var(--ease);}
+  .owner-img:hover img{transform:scale(1.06);}
+  .owner-frame{position:absolute; inset:-14px; border:2px solid var(--amber); border-radius:24px; z-index:-1;}
+
+  /* TRUST */
+  .trust-item{display:flex; gap:1.2rem; align-items:flex-start; padding:1.4rem 0; border-bottom:1px solid rgba(255,255,255,.07);}
+  .trust-item:last-child{border-bottom:none;}
+  .trust-num{font-family:'Bebas Neue'; font-size:2.2rem; color:var(--amber); min-width:56px;}
+  .trust-item h5{font-family:'Inter'; font-weight:700; margin-bottom:.3rem;}
+  .trust-item p{color:rgba(255,255,255,.6); font-size:.9rem; margin:0;}
+
+  /* FACILITIES */
+  .facility-card{border-radius:20px; overflow:hidden; position:relative; height:280px;}
+  .facility-card img{width:100%; height:100%; object-fit:cover; transition:transform .7s var(--ease);}
+  .facility-card:hover img{transform:scale(1.12);}
+  .facility-overlay{position:absolute; inset:0; background:linear-gradient(0deg, rgba(30,28,28,.92) 0%, rgba(30,28,28,.1) 60%); display:flex; align-items:flex-end; padding:1.4rem;}
+  .facility-overlay h5{font-family:'Inter'; font-weight:700; margin:0;}
+
+  /* TRAINERS */
+  .trainer-card{background:var(--bg-secondary); border-radius:20px; overflow:hidden; border:1px solid rgba(255,255,255,.06); transition:transform .5s var(--ease), box-shadow .5s var(--ease);}
+  .trainer-card:hover{transform:translateY(-8px); box-shadow:0 25px 50px -20px rgba(0,0,0,.6);}
+  .trainer-card img{height:260px; width:100%; object-fit:cover; transition:transform .6s var(--ease);}
+  .trainer-card:hover img{transform:scale(1.08);}
+  .trainer-info{padding:1.3rem;}
+  .trainer-info h5{font-family:'Inter'; font-weight:700; margin-bottom:.2rem;}
+  .trainer-info span{color:var(--amber); font-size:.82rem; letter-spacing:.5px;}
+
+  /* TIMELINE */
+  .timeline{position:relative; padding-left:2.2rem;}
+  .timeline::before{content:""; position:absolute; left:8px; top:0; bottom:0; width:2px; background:linear-gradient(180deg, var(--red), var(--amber));}
+  .timeline-item{position:relative; padding-bottom:2.6rem;}
+  .timeline-item:last-child{padding-bottom:0;}
+  .timeline-dot{position:absolute; left:-2.2rem; top:2px; width:18px; height:18px; border-radius:50%; background:var(--grad); box-shadow:0 0 0 4px rgba(241,161,40,.15);}
+  .timeline-item h5{font-family:'Inter'; font-weight:700; margin-bottom:.3rem;}
+  .timeline-item .yr{font-family:'Bebas Neue'; color:var(--amber); font-size:1.5rem; letter-spacing:1px;}
+  .timeline-item p{color:rgba(255,255,255,.6); font-size:.9rem; margin:0;}
+
+  /* ACHIEVEMENTS */
+  .ach-card{background:var(--bg-secondary); border:1px solid rgba(255,255,255,.06); border-radius:20px; padding:2rem; text-align:center; transition:transform .5s var(--ease);}
+  .ach-card:hover{transform:translateY(-8px);}
+  .ach-num{font-family:'Bebas Neue'; font-size:3rem; background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;}
+
+  /* CTA */
+  .cta-band{background:linear-gradient(135deg, rgba(229,37,33,.15), rgba(241,161,40,.15)); border:1px solid rgba(241,161,40,.25); border-radius:28px; padding:4rem 2rem; text-align:center;}
+
+  footer{background:var(--bg-secondary); padding:4.5rem 0 1.5rem; border-top:1px solid rgba(255,255,255,.06);}
+  footer h5{font-family:'Bebas Neue'; letter-spacing:1px; font-size:1.3rem; color:var(--amber); margin-bottom:1.2rem;}
+  footer a{color:rgba(255,255,255,.65); text-decoration:none; transition:color .3s ease, padding-left .3s ease;}
+  footer a:hover{color:var(--amber); padding-left:4px;}
+  .social-icon{width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:rgba(255,255,255,.06); color:#fff; transition:all .35s var(--ease);}
+  .social-icon:hover{background:var(--grad); color:#1E1C1C; transform:translateY(-4px) rotate(8deg);}
+
+  .whatsapp-float{position:fixed; bottom:26px; right:26px; z-index:1000; width:60px; height:60px; border-radius:50%; background:#25D366; color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.8rem; box-shadow:0 10px 30px -8px rgba(37,211,102,.6); animation:pulse 2.2s infinite; transition:transform .35s var(--ease);}
+  .whatsapp-float:hover{transform:scale(1.15) rotate(-6deg); color:#fff;}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55);} 70%{box-shadow:0 0 0 18px rgba(37,211,102,0);} 100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}}
+  ::selection{background:var(--amber); color:#1E1C1C;}
+  @media (prefers-reduced-motion: reduce){*{animation:none !important; transition:none !important;}}
+</style>
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">R<span>1</span> FITNESS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="hamburger"><span></span><span></span><span></span></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link nav-book" href="https://wa.me/923333933330" target="_blank" rel="noopener">Book Appointment</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== PAGE HERO ===================== -->
+<header class="page-hero">
+  <div class="container page-hero-content">
+    <p class="breadcrumb-custom mb-3"><a href="index.html">Home</a> &nbsp;/&nbsp; About</p>
+    <h1>Our <span class="text-grad">Story</span></h1>
+    <p class="text-white-50" style="max-width:560px;">More than a gym &mdash; a community built on discipline, humility, and real transformation in the heart of Satellite Town, Rawalpindi.</p>
+  </div>
+</header>
+
+<!-- ===================== STORY ===================== -->
+<section id="story">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 reveal-left">
+        <div class="story-img position-relative">
+          <div class="story-frame d-none d-lg-block"></div>
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=900&auto=format&fit=crop" class="img-fluid w-100" alt="Inside R1 Fitness Gym training floor" loading="lazy">
+        </div>
+      </div>
+      <div class="col-lg-6 reveal-right">
+        <span class="eyebrow">How It Started</span>
+        <h2 class="mt-2 mb-3">The R1 Fitness <span class="text-grad">Story</span></h2>
+        <p class="text-white-50">R1 Fitness Gym was built on a simple idea: Rawalpindi deserved a training space that matched the standards of the world's best gyms, without losing the warmth of a neighborhood community. What began as a single floor in Satellite Town has grown into two thriving branches, each shaped by the same founding values.</p>
+        <p class="text-white-50">Under the leadership of Dr. Rizwan, the gym &mdash; formerly known as Oxygen Gym on Main Saidpur Road &mdash; was reimagined with modern equipment, certified coaching, and a culture that treats every member like family. Today, R1 Fitness Gym stands as one of the area's most trusted names in strength and transformation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MISSION / VISION / PHILOSOPHY ===================== -->
+<section style="background:var(--bg-secondary)">
+  <div class="container">
+    <div class="section-heading text-center reveal">
+      <span class="eyebrow">What Drives Us</span>
+      <h2 class="mt-2">Mission, Vision &amp; <span class="text-grad">Philosophy</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal">
+        <div class="mvp-card">
+          <div class="mvp-icon"><i class="bi bi-bullseye"></i></div>
+          <h4>Our Mission</h4>
+          <p>To provide every member of our community with access to premium training, expert guidance, and a space that makes real transformation possible, 24 hours a day.</p>
+        </div>
+      </div>
+      <div class="col-md-4 reveal" style="transition-delay:.1s">
+        <div class="mvp-card">
+          <div class="mvp-icon"><i class="bi bi-eye"></i></div>
+          <h4>Our Vision</h4>
+          <p>To become Rawalpindi's most trusted fitness brand &mdash; known for genuine results, a clean and welcoming environment, and a coaching team that truly cares.</p>
+        </div>
+      </div>
+      <div class="col-md-4 reveal" style="transition-delay:.2s">
+        <div class="mvp-card">
+          <div class="mvp-icon"><i class="bi bi-heart"></i></div>
+          <h4>Our Philosophy</h4>
+          <p>Discipline over motivation, consistency over intensity, and community over competition. Strength is built one honest rep at a time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MEET DR RIZWAN ===================== -->
+<section id="owner">
+  <div class="container">
+    <div class="owner-wrap reveal">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 order-lg-2">
+          <div class="owner-img position-relative">
+            <div class="owner-frame d-none d-lg-block"></div>
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop" class="img-fluid rounded-4 w-100" alt="Dr Rizwan, founder of R1 Fitness Gym" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-7 order-lg-1">
+          <span class="eyebrow">Meet The Founder</span>
+          <h2 class="mt-2 mb-3">Dr. <span class="text-grad">Rizwan</span></h2>
+          <p class="text-white-50">Dr. Rizwan leads R1 Fitness Gym with a hands-on approach rarely found in the industry. He's on the floor, he knows the members by name, and he treats every question &mdash; from a first-timer or a competitive lifter &mdash; with the same patience and respect.</p>
+          <p class="text-white-50">His dedication to keeping both branches clean, well-equipped, and genuinely welcoming has earned R1 Fitness Gym a reputation built on trust rather than marketing. For Dr. Rizwan, success is measured by the members who show up, week after week, stronger than before.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHY MEMBERS TRUST US ===================== -->
+<section style="background:var(--bg-secondary)">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5 reveal-left">
+        <span class="eyebrow">Trust</span>
+        <h2 class="mt-2">Why Members <span class="text-grad">Trust Us</span></h2>
+        <p class="text-white-50">Trust isn't given, it's earned through consistency. Here's what keeps our members coming back.</p>
+      </div>
+      <div class="col-lg-7 reveal-right">
+        <div class="trust-item">
+          <div class="trust-num">01</div>
+          <div><h5>Certified, Present Trainers</h5><p>Our coaches are on the floor, not just on the payroll &mdash; correcting form and tracking progress in real time.</p></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">02</div>
+          <div><h5>Clean, Maintained Facilities</h5><p>Equipment is serviced regularly and both branches are kept spotless every single day.</p></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">03</div>
+          <div><h5>Real Flexibility</h5><p>24/7 access, exclusive ladies timings, and a schedule that works around your life.</p></div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-num">04</div>
+          <div><h5>Transparent, Fair Pricing</h5><p>Premium quality training without the premium price tag of international chains.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FACILITIES ===================== -->
+<section id="facilities">
+  <div class="container">
+    <div class="section-heading text-center reveal">
+      <span class="eyebrow">Inside R1</span>
+      <h2 class="mt-2">Our <span class="text-grad">Facilities</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal">
+        <div class="facility-card"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop" alt="Strength training floor" loading="lazy"><div class="facility-overlay"><h5>Strength Floor</h5></div></div>
+      </div>
+      <div class="col-md-4 reveal" style="transition-delay:.1s">
+        <div class="facility-card"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop" alt="Cardio zone" loading="lazy"><div class="facility-overlay"><h5>Cardio Zone</h5></div></div>
+      </div>
+      <div class="col-md-4 reveal" style="transition-delay:.2s">
+        <div class="facility-card"><img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=800&auto=format&fit=crop" alt="Boxing and bag area" loading="lazy"><div class="facility-overlay"><h5>Boxing Area</h5></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRAINERS ===================== -->
+<section style="background:var(--bg-secondary)">
+  <div class="container">
+    <div class="section-heading text-center reveal">
+      <span class="eyebrow">Our Coaches</span>
+      <h2 class="mt-2">Meet Our <span class="text-grad">Trainers</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal">
+        <div class="trainer-card"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=600&auto=format&fit=crop" alt="Certified strength trainer" loading="lazy"><div class="trainer-info"><h5>Certified Strength Coach</h5><span>Strength &amp; Bodybuilding</span></div></div>
+      </div>
+      <div class="col-md-4 reveal" style="transition-delay:.1s">
+        <div class="trainer-card"><img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=600&auto=format&fit=crop" alt="Certified personal trainer" loading="lazy"><div class="trainer-info"><h5>Certified Personal Trainer</h5><span>Weight Loss &amp; Coaching</span></div></div>
+      </div>
+      <div class="col-md-4 reveal" style="transition-delay:.2s">
+        <div class="trainer-card"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=600&auto=format&fit=crop" alt="Certified boxing coach" loading="lazy"><div class="trainer-info"><h5>Boxing Coach</h5><span>Boxing &amp; Conditioning</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TIMELINE ===================== -->
+<section>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4 reveal-left">
+        <span class="eyebrow">Our Journey</span>
+        <h2 class="mt-2">Growing With <span class="text-grad">Our City</span></h2>
+        <p class="text-white-50">From a single floor to two thriving branches across Satellite Town.</p>
+      </div>
+      <div class="col-lg-8 reveal-right">
+        <div class="timeline">
+          <div class="timeline-item"><div class="timeline-dot"></div><span class="yr">Origins</span><h5>Oxygen Gym Opens on Saidpur Road</h5><p>The Main Saidpur Road location begins serving the Satellite Town community.</p></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><span class="yr">Rebrand</span><h5>Reborn as R1 Fitness Gym</h5><p>Under Dr. Rizwan's leadership, the gym is renovated and rebranded with a premium standard.</p></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><span class="yr">Expansion</span><h5>Commercial Market Branch Opens</h5><p>A second branch opens under Sports Hub, built for students and 24/7 access.</p></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><span class="yr">Today</span><h5>1000+ Members Strong</h5><p>R1 Fitness Gym continues to grow as one of Rawalpindi's most trusted training destinations.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ACHIEVEMENTS ===================== -->
+<section style="background:var(--bg-secondary)">
+  <div class="container">
+    <div class="section-heading text-center reveal">
+      <span class="eyebrow">By The Numbers</span>
+      <h2 class="mt-2">Our <span class="text-grad">Achievements</span></h2>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-3 reveal"><div class="ach-card"><div class="ach-num">1000+</div><p class="text-white-50 small mb-0">Members Trained</p></div></div>
+      <div class="col-6 col-md-3 reveal" style="transition-delay:.1s"><div class="ach-card"><div class="ach-num">10+</div><p class="text-white-50 small mb-0">Certified Trainers</p></div></div>
+      <div class="col-6 col-md-3 reveal" style="transition-delay:.2s"><div class="ach-card"><div class="ach-num">2</div><p class="text-white-50 small mb-0">Branches in Rawalpindi</p></div></div>
+      <div class="col-6 col-md-3 reveal" style="transition-delay:.3s"><div class="ach-card"><div class="ach-num">24/7</div><p class="text-white-50 small mb-0">Always Open</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section>
+  <div class="container">
+    <div class="cta-band reveal">
+      <h2 class="mb-3">Ready to Start Your <span class="text-grad">Transformation?</span></h2>
+      <p class="text-white-50 mb-4">Join R1 Fitness Gym today and train with people who are genuinely invested in your progress.</p>
+      <a href="https://wa.me/923333933330" target="_blank" rel="noopener" class="btn btn-amber ripple"><i class="bi bi-whatsapp me-2"></i>Book Appointment</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5 class="display-font" style="font-size:1.8rem;">R1 FITNESS GYM</h5>
+        <p class="text-white-50 small">Rawalpindi's premium 24/7 fitness destination. Two branches, one mission &mdash; transform your body and fuel your strength.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com/r1fitness_gym" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/923333933330" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://wa.me/923333933330" target="_blank" rel="noopener">Book Appointment</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h5>Contact</h5>
+        <ul class="list-unstyled d-flex flex-column gap-2 small">
+          <li class="text-white-50"><i class="bi bi-telephone-fill me-2" style="color:var(--amber)"></i>+92 333 3933330</li>
+          <li class="text-white-50"><i class="bi bi-envelope-fill me-2" style="color:var(--amber)"></i>dr.riz33@gmail.com</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5>Working Hours</h5>
+        <p class="text-white-50 small mb-1"><i class="bi bi-clock-fill me-2" style="color:var(--amber)"></i>Open 24 Hours</p>
+        <p class="text-white-50 small">7 Days a Week</p>
+      </div>
+    </div>
+    <hr class="border-secondary my-4">
+    <p class="text-center text-white-50 small mb-0">&copy; <span id="year"></span> R1 Fitness Gym. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/923333933330" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); });
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){ entry.target.classList.add('active'); io.unobserve(entry.target); }
+    });
+  }, {threshold:0.15});
+  revealEls.forEach(el => io.observe(el));
+</script>
+</body>
+</html>
